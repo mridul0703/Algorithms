@@ -10,6 +10,30 @@ The algorithm partitions the array into three sections:
 
 The goal is to sort the array so that all 0s come first, followed by all 1s, and then all 2s.
 
+### Dutch National Flag Algorithm Implementation:
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int low = 0, mid = 0, high = nums.size() - 1;
+
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums[low], nums[mid]);
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else { // nums[mid] == 2
+                swap(nums[mid], nums[high]);
+                high--;
+            }
+        }
+    }
+};
+```
+
 ### How It Works:
 We use three pointers:
 1. `low` - This pointer marks the boundary between the section of 0s and the section of 1s and 2s.
@@ -96,3 +120,8 @@ For an array `[2, 0, 2, 1, 1, 0]`:
 - It uses O(1) extra space, making it very space-efficient.
 
 This algorithm ensures an efficient and optimal solution to the problem, meeting the constraints provided.
+
+
+
+
+
