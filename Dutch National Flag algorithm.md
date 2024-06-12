@@ -1,4 +1,4 @@
-#Dutch National Flag algorithm
+# Dutch National Flag algorithm
 
 The Dutch National Flag algorithm is designed to sort an array with three distinct values efficiently in one pass using constant extra space. It was proposed by Edsger W. Dijkstra and is particularly well-suited for problems like the "Sort Colors" problem where the values to be sorted are 0, 1, and 2.
 
