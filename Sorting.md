@@ -2,7 +2,7 @@
 
 This file provides a comprehensive overview of common sorting algorithms, including their explanations, time and space complexities, pseudocode, and implementation in C++. Sorting algorithms are fundamental in computer science and are used to arrange data in a particular order. This document covers the following algorithms:
 
-1. [Bubble Sort](#bubble-sort)
+1. [Bubble Sort](#Bubble-sort)
 2. [Selection Sort](#selection-sort)
 3. [Insertion Sort](#insertion-sort)
 4. [Merge Sort](#merge-sort)
