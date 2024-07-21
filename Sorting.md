@@ -17,6 +17,11 @@ This file provides a comprehensive overview of common sorting algorithms, includ
 **Explanation:**  
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the list is sorted. It is named for the way smaller elements "bubble" to the top of the list.
 
+![image](https://github.com/user-attachments/assets/3fe93928-58ca-4bb6-9792-190548e0ad11)
+![image](https://github.com/user-attachments/assets/2383551a-87cc-4a0c-b203-26cf6062b574)
+![image](https://github.com/user-attachments/assets/6e7ab3e7-4968-441f-b8dc-a6530909c9ab)
+
+
 - **Time Complexity:**
   - Best Case: \(O(n)\) (when the list is already sorted)
   - Average Case: \(O(n^2)\)
@@ -67,6 +72,14 @@ int main() {
 
 **Explanation:**  
 Selection Sort divides the array into a sorted and an unsorted region. It repeatedly selects the smallest (or largest) element from the unsorted region and moves it to the end of the sorted region. This continues until the entire array is sorted.
+
+![image](https://github.com/user-attachments/assets/88a1f29c-2885-422a-8fff-d283461b4f89)
+![image](https://github.com/user-attachments/assets/5e1d9cba-fa44-453d-852d-5445e9704f37)
+![image](https://github.com/user-attachments/assets/eac0379d-9409-4ca4-8975-1dce6162dbb8)
+![image](https://github.com/user-attachments/assets/b4dbf8a9-dd69-4cd2-84f2-e768f0cf1bdd)
+![image](https://github.com/user-attachments/assets/24357369-5bdd-43e2-9868-fa66e5694300)
+
+
 
 - **Time Complexity:**
   - Best Case: \(O(n^2)\)
@@ -123,6 +136,9 @@ int main() {
 **Explanation:**  
 Insertion Sort builds the final sorted array one item at a time. It takes each element from the unsorted part and inserts it into the correct position within the sorted part. This is similar to sorting playing cards in your hand.
 
+![image](https://github.com/user-attachments/assets/e01a52a6-60e8-4911-b1dd-7153b4a027a9)
+
+
 - **Time Complexity:**
   - Best Case: \(O(n)\) (when the list is already sorted)
   - Average Case: \(O(n^2)\)
@@ -178,6 +194,9 @@ int main() {
 
 **Explanation:**  
 Merge Sort is a Divide and Conquer algorithm. It divides the array into two halves, recursively sorts each half, and then merges the two sorted halves to produce the final sorted array. It ensures \(O(n \log n)\) performance.
+
+![image](https://github.com/user-attachments/assets/1873b7df-3b1d-47c3-b421-19c8f71cc2a3)
+
 
 - **Time Complexity:**
   - Best Case: \(O(n \log n)\)
@@ -290,9 +309,10 @@ int main() {
 ## Quick Sort
 
 **Explanation:**  
-Quick Sort is a Divide and Conquer algorithm that selects a 'pivot' element, partitions the array into elements less than and
+Quick Sort is a Divide and Conquer algorithm that selects a 'pivot' element, partitions the array into elements less than and greater than the pivot, and recursively sorts the subarrays. It has a good average-case performance.
 
- greater than the pivot, and recursively sorts the subarrays. It has a good average-case performance.
+
+![image](https://github.com/user-attachments/assets/1a3f65f3-d24f-4cff-bb5f-a1e8d5475958)
 
 - **Time Complexity:**
   - Best Case: \(O(n \log n)\)
@@ -364,6 +384,15 @@ int main() {
 
 **Explanation:**  
 Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It builds a max heap from the input data, repeatedly extracts the maximum element from the heap, and rebuilds the heap until the array is sorted.
+
+
+![image](https://github.com/user-attachments/assets/ed1995cb-0514-4f01-a29f-e34f69ec8740)
+![image](https://github.com/user-attachments/assets/ffb0355c-3171-4e94-8a0c-1ec6c7d29930)
+![image](https://github.com/user-attachments/assets/ba3fa337-4ebb-49a7-a900-386de85c46b5)
+![image](https://github.com/user-attachments/assets/aa670550-8a57-47ee-9325-a5b78e133c48)
+![image](https://github.com/user-attachments/assets/600c90cf-38d8-4a05-ac35-e201a9ac409b)
+![image](https://github.com/user-attachments/assets/d6ab8841-33fd-46ff-887f-1416629b23b4)
+
 
 - **Time Complexity:**
   - Best Case: \(O(n \log n)\)
@@ -448,6 +477,20 @@ int main() {
 
 **Explanation:**  
 Counting Sort is a non-comparison-based sorting algorithm. It counts the number of occurrences of each distinct element and uses this information to place elements in the correct position in the output array. It's efficient for sorting integers within a small range.
+
+![image](https://github.com/user-attachments/assets/c9273947-48c1-44a6-b359-45d34a411b02)
+![image](https://github.com/user-attachments/assets/70f5355a-a791-452d-93d3-db9e83a152c5)
+![image](https://github.com/user-attachments/assets/ec139b78-8281-4e11-8bef-018702305a2b)
+![image](https://github.com/user-attachments/assets/991af6d0-0d20-46ef-9d68-0d9f15396940)
+![image](https://github.com/user-attachments/assets/12ffe0dd-aaff-43e3-8e83-430d4883d518)
+![image](https://github.com/user-attachments/assets/a655ab3c-a5b5-4f98-b627-701912928563)
+![image](https://github.com/user-attachments/assets/93edc721-3c6c-4d6d-be84-1a9ecc7b7070)
+![image](https://github.com/user-attachments/assets/8ba0fc10-e442-40e8-a946-61f451e3a8ce)
+![image](https://github.com/user-attachments/assets/4b2a6fdf-bde4-46b6-a00a-3ec4510fdde8)
+![image](https://github.com/user-attachments/assets/7877071a-7c51-4ee9-9006-fe14839520d4)
+![image](https://github.com/user-attachments/assets/66b1f0f6-e7f3-4da2-84cc-715d4282b463)
+![image](https://github.com/user-attachments/assets/9fa96b5f-7665-491a-addf-6306f4fe49f8)
+
 
 - **Time Complexity:**
   - Best Case: \(O(n + k)\)
