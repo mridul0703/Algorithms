@@ -63,7 +63,7 @@ int main() {
 
 ---
 
-## 2. **Selection Sort**
+## Selection Sort
 
 **Explanation:**  
 Selection Sort divides the array into a sorted and an unsorted region. It repeatedly selects the smallest (or largest) element from the unsorted region and moves it to the end of the sorted region. This continues until the entire array is sorted.
@@ -118,7 +118,7 @@ int main() {
 
 ---
 
-## 3. **Insertion Sort**
+## Insertion Sort
 
 **Explanation:**  
 Insertion Sort builds the final sorted array one item at a time. It takes each element from the unsorted part and inserts it into the correct position within the sorted part. This is similar to sorting playing cards in your hand.
@@ -174,7 +174,7 @@ int main() {
 
 ---
 
-## 4. **Merge Sort**
+## Merge Sort
 
 **Explanation:**  
 Merge Sort is a Divide and Conquer algorithm. It divides the array into two halves, recursively sorts each half, and then merges the two sorted halves to produce the final sorted array. It ensures \(O(n \log n)\) performance.
@@ -287,7 +287,7 @@ int main() {
 
 ---
 
-## 5. **Quick Sort**
+## Quick Sort
 
 **Explanation:**  
 Quick Sort is a Divide and Conquer algorithm that selects a 'pivot' element, partitions the array into elements less than and
@@ -360,7 +360,7 @@ int main() {
 
 ---
 
-## 6. **Heap Sort**
+## Heap Sort
 
 **Explanation:**  
 Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It builds a max heap from the input data, repeatedly extracts the maximum element from the heap, and rebuilds the heap until the array is sorted.
@@ -444,7 +444,7 @@ int main() {
 
 ---
 
-## 7. **Counting Sort**
+## Counting Sort
 
 **Explanation:**  
 Counting Sort is a non-comparison-based sorting algorithm. It counts the number of occurrences of each distinct element and uses this information to place elements in the correct position in the output array. It's efficient for sorting integers within a small range.
