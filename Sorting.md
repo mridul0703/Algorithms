@@ -12,7 +12,7 @@ This file provides a comprehensive overview of common sorting algorithms, includ
 
 ---
 
-## 1. **Bubble Sort**
+## Bubble Sort
 
 **Explanation:**  
 Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the list is sorted. It is named for the way smaller elements "bubble" to the top of the list.
