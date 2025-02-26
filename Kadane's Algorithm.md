@@ -77,6 +77,30 @@ int main() {
 }
 ```
 
+## C++ Implementation Advanced 
+```cpp
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int kadane(int arr[], int n) {
+    int maxSum = INT_MIN, currentMax = 0;
+
+    for (int i = 0; i < n; i++) {
+        currentMax = max(arr[i], currentMax + arr[i]); // Standard Kadane’s formula
+        maxSum = max(maxSum, currentMax);
+    }
+    return maxSum;
+}
+
+int main() {
+    int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Maximum contiguous sum is " << kadane(arr, n) << endl;
+    return 0;
+}
+```
+
 ---
 
 ## Complexity Analysis
