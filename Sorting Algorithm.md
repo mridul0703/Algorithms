@@ -24,17 +24,17 @@ Sorting algorithms are fundamental in computer science and are used in various a
 
 ## Comparison of Sorting Algorithms
 
-| Algorithm       | Best Case  | Average Case | Worst Case  | Space Complexity | Stable | Use Cases |
+| Algorithm       | Best Case (Efficiency)  | Average Case (Efficiency) | Worst Case (Efficiency)  | Space Complexity | Stable | Use Cases |
 |---------------|------------|-------------|------------|----------------|--------|-----------|
-| **Bubble Sort** | O(n)       | O(n²)       | O(n²)       | O(1)           | Yes    | Small datasets, teaching purposes |
-| **Selection Sort** | O(n²)    | O(n²)       | O(n²)       | O(1)           | No     | Small datasets, when swaps are expensive |
-| **Insertion Sort** | O(n)    | O(n²)       | O(n²)       | O(1)           | Yes    | Nearly sorted arrays, small datasets |
-| **Merge Sort** | O(n log n)  | O(n log n)  | O(n log n)  | O(n)           | Yes    | Large datasets, linked lists |
-| **Quick Sort** | O(n log n)  | O(n log n)  | O(n²)       | O(log n)       | No     | General-purpose sorting, quick execution |
-| **Heap Sort** | O(n log n)  | O(n log n)  | O(n log n)  | O(1)           | No     | Priority queues, large datasets |
-| **Counting Sort** | O(n + k) | O(n + k)    | O(n + k)    | O(k)           | Yes    | Sorting integers with a limited range |
-| **Radix Sort** | O(nk)      | O(nk)       | O(nk)       | O(n + k)       | Yes    | Sorting numbers, words, or fixed-length strings |
-| **Bucket Sort** | O(n + k)  | O(n + k)    | O(n²)       | O(n + k)       | Yes    | Floating-point numbers, uniform distribution |
-| **Shell Sort** | O(n log n) | O(n log n)  | O(n²)       | O(1)           | No     | Medium-sized datasets, optimized insertion sort |
+| **Bubble Sort** | O(n) (0️⃣)       | O(n²) (3️⃣)       | O(n²) (3️⃣)       | O(1)           | Yes    | Small datasets, teaching purposes |
+| **Selection Sort** | O(n²) (3️⃣)    | O(n²) (3️⃣)       | O(n²) (3️⃣)       | O(1)           | No     | Small datasets, when swaps are expensive |
+| **Insertion Sort** | O(n) (0️⃣)    | O(n²) (3️⃣)       | O(n²) (3️⃣)       | O(1)           | Yes    | Nearly sorted arrays, small datasets |
+| **Merge Sort** | O(n log n) (1️⃣)  | O(n log n) (1️⃣)  | O(n log n) (1️⃣)  | O(n)           | Yes    | Large datasets, linked lists |
+| **Quick Sort** | O(n log n) (1️⃣)  | O(n log n) (1️⃣)  | O(n²) (3️⃣)       | O(log n)       | No     | General-purpose sorting, quick execution |
+| **Heap Sort** | O(n log n) (1️⃣)  | O(n log n) (1️⃣)  | O(n log n) (1️⃣)  | O(1)           | No     | Priority queues, large datasets |
+| **Counting Sort** | O(n + k) (1️⃣) | O(n + k) (1️⃣)    | O(n + k) (1️⃣)    | O(k)           | Yes    | Sorting integers with a limited range |
+| **Radix Sort** | O(nk) (1️⃣)      | O(nk) (1️⃣)       | O(nk) (1️⃣)       | O(n + k)       | Yes    | Sorting numbers, words, or fixed-length strings |
+| **Bucket Sort** | O(n + k) (1️⃣)  | O(n + k) (1️⃣)    | O(n²) (3️⃣)       | O(n + k)       | Yes    | Floating-point numbers, uniform distribution |
+| **Shell Sort** | O(n log n) (1️⃣) | O(n log n) (1️⃣)  | O(n²) (3️⃣)       | O(1)           | No     | Medium-sized datasets, optimized insertion sort |
 
 ---
