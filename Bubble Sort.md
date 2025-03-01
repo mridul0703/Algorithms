@@ -1,26 +1,20 @@
-# Bubble Sort
+# Bubble Sort Algorithm
 
-## Introduction
-Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process repeats until the list is sorted. It is named "Bubble Sort" because smaller elements "bubble" to the top of the list.
+## Definition
+Bubble Sort is a simple sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order. It is named for the way smaller elements "bubble" to the top of the array.
 
-## Algorithm Steps
-1. Start at the beginning of the array.
-2. Compare adjacent elements and swap them if needed.
-3. Continue this process for the entire array.
-4. Repeat until no swaps are needed.
+---
 
-## Pseudo-code
+## Pseudocode
 ```plaintext
 BubbleSort(arr, n):
     for i from 0 to n-1:
-        swapped = false
         for j from 0 to n-i-1:
             if arr[j] > arr[j+1]:
                 swap(arr[j], arr[j+1])
-                swapped = true
-        if swapped == false:
-            break
 ```
+
+---
 
 ## C++ Implementation
 ```cpp
@@ -29,14 +23,11 @@ using namespace std;
 
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        bool swapped = false;
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
-                swapped = true;
             }
         }
-        if (!swapped) break;
     }
 }
 
@@ -50,45 +41,65 @@ void printArray(int arr[], int n) {
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Unsorted array: ";
+    
+    cout << "Original Array: ";
     printArray(arr, n);
     
     bubbleSort(arr, n);
     
-    cout << "Sorted array: ";
+    cout << "Sorted Array: ";
     printArray(arr, n);
     return 0;
 }
 ```
 
-## Time Complexity Analysis
-| Case        | Complexity |
-|------------|-----------|
-| Best Case  | O(n) (Already Sorted) |
-| Average Case | O(n²) |
-| Worst Case  | O(n²) (Reverse Sorted) |
+---
 
-## Space Complexity
-- O(1) (In-Place Sorting Algorithm)
-
-## Applications of Bubble Sort
-1. **Educational Purpose**: Helps beginners understand the basics of sorting.
-2. **Small Datasets**: Works well for small lists where efficiency is not critical.
-3. **Detecting Nearly Sorted Data**: The optimized version (with swap check) efficiently detects if an array is already sorted.
-4. **Computer Graphics**: Sometimes used in simple animation techniques.
-5. **Network Packet Sorting**: Used in scenarios where small sets of data packets need to be sorted.
-
-## Advantages
-- Simple and easy to implement.
-- Requires no additional memory (in-place sorting).
-
-## Disadvantages
-- Inefficient for large datasets.
-- O(n²) complexity makes it slower than advanced sorting algorithms.
-
-## Conclusion
-Bubble Sort is a fundamental sorting algorithm primarily used for teaching and understanding basic sorting principles. However, for practical applications, more efficient algorithms like Merge Sort, Quick Sort, or Heap Sort are preferred.
+## Step-by-Step Explanation
+Let's take an example array:
+```plaintext
+arr[] = {64, 34, 25, 12, 22, 11, 90}
+```
+### **Pass 1:**
+```plaintext
+(64 34) 25 12 22 11 90 → Swap → (34 64) 25 12 22 11 90
+34 (64 25) 12 22 11 90 → Swap → 34 (25 64) 12 22 11 90
+34 25 (64 12) 22 11 90 → Swap → 34 25 (12 64) 22 11 90
+34 25 12 (64 22) 11 90 → Swap → 34 25 12 (22 64) 11 90
+34 25 12 22 (64 11) 90 → Swap → 34 25 12 22 (11 64) 90
+34 25 12 22 11 (64 90) → No swap
+```
+### **Pass 2:**
+```plaintext
+(34 25) 12 22 11 64 90 → Swap → (25 34) 12 22 11 64 90
+25 (34 12) 22 11 64 90 → Swap → 25 (12 34) 22 11 64 90
+25 12 (34 22) 11 64 90 → Swap → 25 12 (22 34) 11 64 90
+25 12 22 (34 11) 64 90 → Swap → 25 12 22 (11 34) 64 90
+```
+Repeating this process, we get:
+```plaintext
+Final Sorted Array: {11, 12, 22, 25, 34, 64, 90}
+```
 
 ---
 
-> **Note:** You can run the provided C++ code to test Bubble Sort and see how it works with different input arrays.
+## Time and Space Complexity
+| Case       | Time Complexity |
+|------------|----------------|
+| Best Case  | O(n) (Already sorted) |
+| Worst Case | O(n²) (Reversed order) |
+| Average Case | O(n²) |
+| Space Complexity | O(1) (In-place sort) |
+
+---
+
+## Applications and Uses
+1. **Educational Purposes** - Used to teach sorting concepts due to its simplicity.
+2. **Small Data Sets** - Works well for small arrays where performance is not a concern.
+3. **Step-by-Step Visualization** - Used in animations and debugging for learning sorting concepts.
+4. **Detecting Sorted Data** - If no swaps occur in a pass, the array is already sorted.
+
+---
+
+## Conclusion
+Bubble Sort is easy to implement but inefficient for large datasets due to its O(n²) complexity. It is useful in teaching, debugging, and handling small datasets efficiently.
