@@ -7,16 +7,18 @@ Sorting algorithms are fundamental in computer science and are used in various a
 
 ## Brief Working of Sorting Algorithms
 
-1. **Bubble Sort** - Repeatedly swaps adjacent elements if they are in the wrong order, moving the largest element to the end in each pass.
-2. **Selection Sort** - Selects the smallest element in each iteration and swaps it with the first unsorted element.
-3. **Insertion Sort** - Inserts each element in its correct position by shifting larger elements to the right.
-4. **Merge Sort** - Recursively divides the array into halves, sorts each half, and merges them in sorted order.
-5. **Quick Sort** - Selects a pivot, partitions the array around it, and recursively sorts the subarrays.
-6. **Heap Sort** - Converts the array into a heap and repeatedly extracts the maximum (or minimum) element.
-7. **Counting Sort** - Uses a frequency array to count occurrences and place elements directly into the sorted array.
-8. **Radix Sort** - Sorts numbers digit by digit using counting sort as a subroutine.
-9. **Bucket Sort** - Divides the elements into buckets, sorts each bucket, and combines them.
-10. **Shell Sort** - Uses a decreasing sequence of gaps to perform insertion sort on elements spaced apart, reducing swaps.
+| Algorithm | Working Mechanism |
+|-----------|------------------|
+| **Bubble Sort** | Repeatedly swaps adjacent elements if they are in the wrong order, moving the largest element to the end in each pass. |
+| **Selection Sort** | Selects the smallest element in each iteration and swaps it with the first unsorted element. |
+| **Insertion Sort** | Inserts each element in its correct position by shifting larger elements to the right. |
+| **Merge Sort** | Recursively divides the array into halves, sorts each half, and merges them in sorted order. |
+| **Quick Sort** | Selects a pivot, partitions the array around it, and recursively sorts the subarrays. |
+| **Heap Sort** | Converts the array into a heap and repeatedly extracts the maximum (or minimum) element. |
+| **Counting Sort** | Uses a frequency array to count occurrences and place elements directly into the sorted array. |
+| **Radix Sort** | Sorts numbers digit by digit using counting sort as a subroutine. |
+| **Bucket Sort** | Divides the elements into buckets, sorts each bucket, and combines them. |
+| **Shell Sort** | Uses a decreasing sequence of gaps to perform insertion sort on elements spaced apart, reducing swaps. |
 
 ---
 
