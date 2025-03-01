@@ -101,5 +101,14 @@ Final Sorted Array: {11, 12, 22, 25, 34, 64, 90}
 
 ---
 
+## Specific Problems Where Bubble Sort is Useful
+1. **Detecting Nearly Sorted Data** - If the input array is almost sorted, Bubble Sort performs efficiently in O(n) time.
+2. **Sorting Small Lists** - In small datasets, where simplicity matters more than efficiency, Bubble Sort can be useful.
+3. **Sorting Student Roll Numbers** - When working with small numbers of records in an educational system.
+4. **Checking Array Sortedness** - Bubble Sort can be used to verify whether an array is sorted by checking for swaps in one pass.
+5. **Bubble Down Effect in Simulations** - Used in some simulations where elements need to settle in order, like particle sorting.
+
+---
+
 ## Conclusion
 Bubble Sort is easy to implement but inefficient for large datasets due to its O(n²) complexity. It is useful in teaching, debugging, and handling small datasets efficiently.
